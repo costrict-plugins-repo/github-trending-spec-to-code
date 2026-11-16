@@ -1,0 +1,11 @@
+# Work-item composition
+
+An item describes an outcome, its scope, observable acceptance criteria and how to verify them locally. Use the sections needed to make those facts clear; avoid duplicating a linked specification.
+
+Types are `epic`, `feat` (story/feature), `task`, and `bugfix`. A task or bugfix is a leaf; other levels may be nested as needed. Keys (such as `TM-42`) and parent/dependency relationships are assigned through the CLI; a top-level item names its project. For bugs, use type `bugfix` (`taskman new --type bugfix`) and describe reproduction, expected behavior and actual behavior. There is no `--kind` creation flag.
+
+For planning, make children independently verifiable and identify ordering dependencies. A parent's acceptance criteria cover the integrated outcome, not just whether children are marked done.
+
+Keep significant decisions, their reasons and scope refinements in decision comments. Before closure, summarize changes, rationale, relevant artifacts, remaining limits and follow-up links. Record verification separately with exact checks, outcomes and source state. Closed records remain immutable.
+
+See [the shared workflow](../references/workflow.md) for persistence and lifecycle commands. Never write Taskman's database directly.
