@@ -1,0 +1,14 @@
+---
+name: docs-sync
+description: Review project documentation for drift against completed Taskman work and update affected documents.
+---
+
+Arguments: `[KEY]`.
+
+Read [the shared workflow](../../references/workflow.md) for CLI syntax, context, comments and closure rules.
+
+Read the specified item's context, completion summary and changed artifacts.
+
+Check the project's requirements, architecture, setup and usage documents only where completed work affects them. Correct established drift within the user's authorization, preserving document structure. Surface unresolved product decisions instead of inventing requirements. Never edit the closed task or its evidence. For follow-up work, create a linked task when requested or within an authorized maintenance scope.
+
+Report documents changed and remaining drift. Clear only queue entries actually processed, if a queue was used.
